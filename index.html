@@ -1,25 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blanchard</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <h2>sdgvsdf</h2>
-    </div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blanchard</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__main-nav">
+        <div class="container header__container">
+          <button class="header__menu-burger" id="nav_toggle" aria-label="Меню">
+            <span class="header__menu-burger-line"></span>
+            <span class="header__menu-burger-line"></span>
+            <span class="header__menu-burger-line"></span>
+          </button>
+          <img src="./img/header/logo.svg" alt="logo" />
+          <div class="header__nav-menu">
+            <nav class="header__nav-site">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">О нас</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">Галерея</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">Каталог</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">События</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">Издания</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">Проекты</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__nav-entrance">
+              <a class="header__nav-entrance-link" href="#">Войти</a>
+            </div>
+          </div>
 
-  </header>
+        </div>
+      </div>
+    </header>
 
-
-
-
-
-  <script src="./js/app.js"></script>
-</body>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
