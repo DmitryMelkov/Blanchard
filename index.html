@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blanchard</title>
     <link rel="stylesheet" href="./css/normalize.css" />
+
+    <!-- Simplebar -->
+    <link href="./css/simplebar.css" rel="stylesheet" />
+
+    <!-- Swiper-slide -->
+    <link href="./css/swiper-bundle.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header fixed">
       <div class="header__main-nav">
-        <div class="container header__container">
-          <button class="header__menu-burger" id="nav_toggle" aria-label="Меню">
+        <div class="container header__container-main-nav">
+          <button class="header__menu-burger" id="nav__toggle" aria-label="Меню">
             <span class="header__menu-burger-line"></span>
             <span class="header__menu-burger-line"></span>
             <span class="header__menu-burger-line"></span>
           </button>
-          <img src="./img/header/logo.svg" alt="logo" />
-          <div class="header__nav-menu">
+          <img class="header__menu-logo" id="header__img-logo" src="./img/header/logo.svg" alt="logo" />
+
+          <form class="header__form-btn" action="/">
+            <button class="header__form-btn-open"></button>
+            <input class="header__form-btn-input" type="search" placeholder="Поиск по сайту" />
+            <button class="header__form-btn-close"></button>
+          </form>
+
+          <div class="header__nav-menu" id="nav">
             <nav class="header__nav-site">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
@@ -48,10 +62,150 @@
               <a class="header__nav-entrance-link" href="#">Войти</a>
             </div>
           </div>
-
+        </div>
+      </div>
+      <div class="header__additional-nav">
+        <div class="container header__container-additional-nav">
+          <ul class="header__additional-list">
+            <li class="header__additional-item">
+              <button class="header__additional-btn" aria-label="По клику выпадающее меню">Реализм</button>
+              <ul class="dropdown-list" data-simplebar data-simplebar-auto-hide="false">
+                <li class="dropdown-item item-1">
+                  <a class="dropdown-link" href="#" tabindex="-1">Тинторетто</a>
+                </li>
+                <li class="dropdown-item item-2">
+                  <a class="dropdown-link" href="#" tabindex="-1">Фридрих</a>
+                </li>
+                <li class="dropdown-item item-3">
+                  <a class="dropdown-link" href="#" tabindex="-1">Леонардо</a>
+                </li>
+                <li class="dropdown-item item-4">
+                  <a class="dropdown-link" href="#" tabindex="-1">Верроккьо</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__additional-item">
+              <button class="header__additional-btn" aria-label="По клику выпадающее меню">Импрессионизм</button>
+              <ul class="dropdown-list" data-simplebar data-simplebar-auto-hide="false">
+                <li class="dropdown-item item-5">
+                  <a class="dropdown-link" href="#" tabindex="-1">Моне</a>
+                </li>
+                <li class="dropdown-item item-6">
+                  <a class="dropdown-link" href="#" tabindex="-1">Сислей</a>
+                </li>
+                <li class="dropdown-item item-7">
+                  <a class="dropdown-link" href="#" tabindex="-1">Мане</a>
+                </li>
+                <li class="dropdown-item item-8">
+                  <a class="dropdown-link" href="#" tabindex="-1">Ренуар</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__additional-item">
+              <button class="header__additional-btn" aria-label="По клику выпадающее меню">Постимпрессионизм</button>
+              <ul class="dropdown-list" data-simplebar data-simplebar-auto-hide="false">
+                <li class="dropdown-item item-9">
+                  <a class="dropdown-link" href="#" tabindex="-1">Ван Гог</a>
+                </li>
+                <li class="dropdown-item item-10">
+                  <a class="dropdown-link" href="#" tabindex="-1">Сезанн</a>
+                </li>
+                <li class="dropdown-item item-11">
+                  <a class="dropdown-link" href="#" tabindex="-1">Гоген</a>
+                </li>
+                <li class="dropdown-item item-12">
+                  <a class="dropdown-link" href="#" tabindex="-1">Сёра</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__additional-item">
+              <button class="header__additional-btn" aria-label="По клику выпадающее меню">Авангард</button>
+              <ul class="dropdown-list" data-simplebar data-simplebar-auto-hide="false">
+                <li class="dropdown-item item-13">
+                  <a class="dropdown-link" href="#" tabindex="-1">Кандинский</a>
+                </li>
+                <li class="dropdown-item item-14">
+                  <a class="dropdown-link" href="#" tabindex="-1">Маринетти</a>
+                </li>
+                <li class="dropdown-item item-15">
+                  <a class="dropdown-link" href="#" tabindex="-1">Малевич</a>
+                </li>
+                <li class="dropdown-item item-16">
+                  <a class="dropdown-link" href="#" tabindex="-1">Пикассо</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__additional-item">
+              <button class="header__additional-btn" aria-label="По клику выпадающее меню">Футуризм</button>
+              <ul class="dropdown-list" data-simplebar data-simplebar-auto-hide="false">
+                <li class="dropdown-item item-17">
+                  <a class="dropdown-link" href="#" tabindex="-1">Карра</a>
+                </li>
+                <li class="dropdown-item item-18">
+                  <a class="dropdown-link" href="#" tabindex="-1">Прателла</a>
+                </li>
+                <li class="dropdown-item item-19">
+                  <a class="dropdown-link" href="#" tabindex="-1">Северини</a>
+                </li>
+                <li class="dropdown-item item-20">
+                  <a class="dropdown-link" href="#" tabindex="-1">Балла</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="header__additional-form" action="/">
+            <button class="header__additional-form-btn"></button>
+            <input class="header__additional-form-input" type="search" placeholder="Поиск по сайту" />
+          </form>
         </div>
       </div>
     </header>
+    <main class="main">
+      <!-- intro -->
+      <section class="section-intro">
+        <div class="swiper swiper-intro">
+          <div class="swiper-wrapper intro-anim swiper-no-swiping">
+            <div class="swiper-slide intro-bg intro-bg--one"></div>
+            <div class="swiper-slide intro-bg intro-bg--two"></div>
+            <div class="swiper-slide intro-bg intro-bg--three"></div>
+          </div>
+        </div>
+
+        <div class="container intro-container">
+          <h2 class="intro__title title-reset">Прикоснитесь к&nbsp;прекрасному</h2>
+
+          <p class="intro__descr descr-reset">
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
+            для новых предложений.
+          </p>
+
+          <a class="intro__btn" href="#contacts"> Подписаться на&nbsp;рассылку </a>
+        </div>
+      </section>
+      <!-- About-Us -->
+      <section class="section-about-us section-offcet" id="about-us">
+        <div class="container">
+          <h2 class="section-about-us__title section-title title-reset">О нас</h2>
+
+          <p class="section-about-us__descr section-descr descr-reset">
+            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+            участника как способного принимать собственные решения касаемо распределения внутренних резервов
+            и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет
+            за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+            высокое качество позиционных исследований создаёт необходимость включения в производственный план целого
+            ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов&nbsp;и ресурсов.
+            В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+            среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- swiper-slide -->
+    <script src="./js/swiper-bundle.js"></script>
+
+    <!-- simplebar(dropdown) -->
+    <script src="./js/simplebar.js"></script>
 
     <script src="./js/app.js"></script>
   </body>
