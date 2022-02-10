@@ -1,34 +1,30 @@
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Italic.woff2') format('woff2'),
-  url('../fonts/OpenSans-Italic.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-  url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
-  url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-display: swap;
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
-  url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -287,6 +283,12 @@ a {
   color: var(--color-purple-active);
 }
 
+.header__nav-link:focus-visible {
+  background-color: var(--color-purple-active);
+  outline: 7px solid var(--color-purple-active);
+  outline-offset: -1px;
+}
+
 .header__nav-entrance {
   position: relative;
 }
@@ -316,6 +318,16 @@ a {
 .header__nav-entrance-link:active {
   border-color: var(--color-light-lilac);
   background-color: var(--color-purple-active);
+}
+
+.header__nav-entrance-link:focus-visible {
+  color: var(--color-purple-active);
+  outline: none;
+}
+
+.header__nav-entrance-link:focus-visible::before {
+  background-image: url("../img/header/enterance-active.svg");
+
 }
 
 /*search*/
@@ -772,6 +784,14 @@ a {
 
 .intro__btn:active {
   background-color: var(--color-purple-active);
+}
+
+.intro__btn:focus-visible {
+  outline: none;
+}
+
+.intro__btn:focus-visible::after {
+  opacity: 1;
 }
 
 /* Section-About-Us */
