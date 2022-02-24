@@ -279,6 +279,23 @@ a {
   transition: color 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
+=======
+.header__nav-link:hover {
+  color: var(--color-light-lilac);
+}
+
+.header__nav-link:active {
+  color: var(--color-purple-active);
+}
+
+.header__nav-link:focus-visible {
+  background-color: var(--color-purple-active);
+  outline: 7px solid var(--color-purple-active);
+  outline-offset: -1px;
+}
+
+>>>>>>> 33a4a97695b4d48f2f0f057828fc0a7c0f22253f
 .header__nav-entrance {
   position: relative;
 }
@@ -306,6 +323,24 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
+=======
+.header__nav-entrance-link:active {
+  border-color: var(--color-light-lilac);
+  background-color: var(--color-purple-active);
+}
+
+.header__nav-entrance-link:focus-visible {
+  color: var(--color-purple-active);
+  outline: none;
+}
+
+.header__nav-entrance-link:focus-visible::before {
+  background-image: url("../img/header/enterance-active.svg");
+
+}
+
+>>>>>>> 33a4a97695b4d48f2f0f057828fc0a7c0f22253f
 /*search*/
 .header__form-btn {
   display: flex;
@@ -719,6 +754,25 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
+=======
+.intro__btn:hover {
+  border-color: var(--color-light-lilac);
+}
+
+.intro__btn:active {
+  background-color: var(--color-purple-active);
+}
+
+.intro__btn:focus-visible {
+  outline: none;
+}
+
+.intro__btn:focus-visible::after {
+  opacity: 1;
+}
+
+>>>>>>> 33a4a97695b4d48f2f0f057828fc0a7c0f22253f
 /* Section-About-Us */
 .section-title {
   margin-bottom: 15px;
