@@ -976,6 +976,7 @@ a {
   width: 30px;
   height: 30px;
   transition: all 0.3s ease-in-out;
+  outline: none;
 }
 
 .swiper-button-prev {
@@ -1488,6 +1489,7 @@ a {
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
+  outline: none;
 }
 
 .projects-prev {
@@ -3587,9 +3589,18 @@ a {
     width: 100%;
   }
 
+  .slide-card__img {
+    height: 373px;
+    max-height: 373px;
+  }
+
   /*catalog
   ======================*/
   .accordion-list {
     column-count: 1;
+  }
+
+  .section-accordion__item.active .accordion-container {
+    height: 812px;
   }
 }
