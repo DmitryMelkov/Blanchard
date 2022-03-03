@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blanchard</title>
+    <title>Blanchard-художественная галерея</title>
+    <link href="./img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="./css/normalize.css" />
 
     <!-- Simplebar -->
@@ -26,7 +27,7 @@
     <header class="header fixed">
       <div class="header__main-nav">
         <div class="container header__container-main-nav">
-          <button class="header__menu-burger" id="nav__toggle" aria-label="Меню">
+          <button class="header__menu-burger" id="nav__toggle" aria-label="Меню-бургер">
             <span class="header__menu-burger-line"></span>
             <span class="header__menu-burger-line"></span>
             <span class="header__menu-burger-line"></span>
@@ -34,36 +35,36 @@
           <img class="header__menu-logo" id="header__img-logo" src="./img/header/logo.svg" alt="logo" />
 
           <form class="header__form-btn" action="/">
-            <button class="header__form-btn-open"></button>
+            <button class="header__form-btn-open" aria-label="Поиск"></button>
             <input class="header__form-btn-input" type="search" placeholder="Поиск по сайту" />
-            <button class="header__form-btn-close"></button>
+            <button class="header__form-btn-close" aria-label="Закрыть поиск"></button>
           </form>
 
           <div class="header__nav-menu" id="nav">
             <nav class="header__nav-site">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">О нас</a>
+                  <a data-goto=".section-about-us" class="header__nav-link" href="#">О нас</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Галерея</a>
+                  <a data-goto=".section-gallery" class="header__nav-link" href="#">Галерея</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Каталог</a>
+                  <a data-goto=".section-catalog" class="header__nav-link" href="#">Каталог</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">События</a>
+                  <a data-goto=".section-events" class="header__nav-link" href="#">События</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Проекты</a>
+                  <a data-goto=".section-projects" class="header__nav-link" href="#">Проекты</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Контакты</a>
+                  <a data-goto=".section-contacts" class="header__nav-link" href="#">Контакты</a>
                 </li>
               </ul>
             </nav>
             <div class="header__nav-entrance">
-              <a class="header__nav-entrance-link" href="#">Войти</a>
+              <a class="header__nav-entrance-link" href="#" aria-label="Войти">Войти</a>
             </div>
           </div>
         </div>
@@ -183,7 +184,9 @@
             для новых предложений.
           </p>
 
-          <a class="intro__btn btn-reset" href="#contacts"> Подписаться на&nbsp;рассылку </a>
+          <a class="intro__btn btn-reset" href="#contacts" aria-label="Подписаться на рассылку">
+            Подписаться на&nbsp;рассылку
+          </a>
         </div>
       </section>
       <!-- about-Us -->
@@ -848,10 +851,10 @@
                   data-tippy-content="Пример современных тенденций&nbsp;&mdash; современная методология разработки"
                   id="tooltipPopup-0"
                 >
-                  <div class="section-projects__tooltip-marker">
-                    <div class="marker-icon"></div>
-                    <div class="marker-out icon-is-active"></div>
-                  </div>
+                  <span class="section-projects__tooltip-marker">
+                    <span class="marker-icon"></span>
+                    <span class="marker-out icon-is-active"></span>
+                  </span>
                 </button>
                 обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
                 принимаемых решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть
@@ -861,10 +864,10 @@
                   data-tippy-content="Приятно, граждане, наблюдать, как сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции"
                   id="tooltipPopup-1"
                 >
-                  <div class="section-projects__tooltip-marker">
-                    <div class="marker-icon"></div>
-                    <div class="marker-out icon-is-active"></div>
-                  </div>
+                  <span class="section-projects__tooltip-marker">
+                    <span class="marker-icon"></span>
+                    <span class="marker-out icon-is-active"></span>
+                  </span>
                 </button>
                 исключительно в&nbsp;разрезе маркетинговых и финансовых
                 <button
@@ -872,10 +875,10 @@
                   data-tippy-content="В стремлении повысить качество"
                   id="tooltipPopup-2"
                 >
-                  <div class="section-projects__tooltip-marker">
-                    <div class="marker-icon"></div>
-                    <div class="marker-out icon-is-active"></div>
-                  </div>
+                  <span class="section-projects__tooltip-marker">
+                    <span class="marker-icon"></span>
+                    <span class="marker-out icon-is-active"></span>
+                  </span>
                 </button>
                 предпосылок. Банальные, но неопровержимые выводы, а&nbsp;также представители современных социальных
                 резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с не
@@ -982,7 +985,7 @@
                   </label>
                 </li>
               </ul>
-              <button class="form-btn btn-reset">Заказать обратный звонок</button>
+              <button class="form-btn btn-reset" aria-label="Заказать обратный звонок">Заказать обратный звонок</button>
             </form>
             <div class="content-right">
               <h4 class="content-right__title title-reset">Связаться в&nbsp;один клик</h4>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.addEventListener("DOMContentLoaded", function () {
   //header__menu-burger
   let burger = document.getElementById("nav__toggle");
@@ -344,7 +343,7 @@ window.addEventListener("DOMContentLoaded", function () {
     myMap.controls.remove("fullscreenControl");
     myMap.controls.remove("rulerControl");
     myMap.behaviors.disable("scrollZoom");
-    myMap.behaviors.disable('multiTouch');
+    myMap.behaviors.disable("multiTouch");
     myMap.behaviors.disable("drag");
     myMap.controls.remove("typeSelector");
     myMap.geoObjects.add(placeMarkCustom);
@@ -388,96 +387,30 @@ window.addEventListener("DOMContentLoaded", function () {
       flag = 1;
     }
   });
-});
-=======
-window.addEventListener("DOMContentLoaded", function () {
-  //header__menu-burger
-  let burger = document.getElementById("nav__toggle");
 
-  function myBurger() {
-    let element = document.getElementById("nav");
-    element.classList.toggle("open");
-    burger.classList.toggle("active");
-  }
+  //прокрутка при клике
+  const menuLinks = document.querySelectorAll(".header__nav-link[data-goto]");
 
-  burger.addEventListener("click", myBurger);
-
-  //header_menu-search
-  const searchBtn = document.querySelector(".header__form-btn-open");
-  const closeSearchBtn = document.querySelector(".header__form-btn-close");
-  const formBtn = document.querySelector(".header__form-btn");
-  const formBtninput = document.querySelector(".header__form-btn-input");
-
-  //search 768px
-  const widthScreen = window.innerWidth;
-  const logo = document.querySelector(".header__menu-logo");
-
-  searchBtn.onclick = (e) => {
-    e.preventDefault();
-    formBtn.classList.add("active");
-    formBtninput.classList.add("active");
-    if (widthScreen <= 1023) {
-      logo.classList.add("disappear");
-      burger.classList.add("disappear");
-    }
-  };
-
-  closeSearchBtn.onclick = (e) => {
-    e.preventDefault();
-    formBtn.classList.remove("active");
-    formBtninput.classList.remove("active");
-    if (widthScreen <= 1023) {
-      logo.classList.remove("disappear");
-      burger.classList.remove("disappear");
-    }
-  };
-
-  //simplebar
-  document.addEventListener("click", function (event) {
-    const activeDropdown = document.querySelector(".dropdown-is-active");
-    const activeDropdownButton = activeDropdown && activeDropdown.querySelector(".header__additional-btn");
-    const tabIndex = document.querySelectorAll(".dropdown-link");
-    const el = event.target;
-
-    //чтобы убирался класс после нажатия
-    activeDropdown && activeDropdown.classList.remove("dropdown-is-active");
-    //менялся таб-индекс
-    tabIndex.forEach(function (tabElem) {
-      tabElem.setAttribute("tabindex", "-1");
+  if (menuLinks.length > 0) {
+    menuLinks.forEach((menuLink) => {
+      menuLink.addEventListener("click", onMenuLinkClick);
     });
 
-    let dropDown = () => {
-      el.closest(".header__additional-item").classList.add("dropdown-is-active");
-      let parentDrop = el.closest(".header__additional-item").querySelector(".dropdown-list");
-      parentDrop.querySelectorAll(".dropdown-link").forEach((ev) => {
-        ev.setAttribute("tabindex", "0");
-      });
-    };
+    function onMenuLinkClick(e) {
+      const menuLink = e.target;
 
-    //чтобы не закрывался симплбар при клике на него
-    const dropList = document.querySelectorAll(".simplebar-content");
-    dropList.forEach((drop) => {
-      if (drop === el) {
-        dropDown();
+      //проверка есть ли такой атрибут
+      if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+        const gotoBlock = document.querySelector(menuLink.dataset.goto);
+        const gotoBlockValue =
+          gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector("header").offsetHeight;
+
+        window.scrollTo({
+          top: gotoBlockValue,
+          behavior: "smooth",
+        });
+        e.preventDefault();
       }
-    });
-
-    if (Array.from(el.classList).includes("header__additional-btn") && activeDropdownButton !== el) {
-      dropDown();
     }
-  });
-
-  //intro-swiper
-  new Swiper(".swiper-intro", {
-    renderExternalUpdate: false,
-    longSwipes: false,
-    autoplay: {
-      delay: 9000,
-    },
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
-  });
+  }
 });
->>>>>>> 33a4a97695b4d48f2f0f057828fc0a7c0f22253f
