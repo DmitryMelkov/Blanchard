@@ -638,24 +638,13 @@ a {
   animation-delay: 1s;
 }
 
-.intro-bg {
+.intro-picture {
   width: 100%;
+}
+
+.intro-img {
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.intro-bg--one {
-  background-image: url("../img/intro/bg-one.jpg");
-}
-
-.intro-bg--two {
-  background-image: url("../img/intro/bg-two.jpg");
-}
-
-.intro-bg--three {
-  background-image: url("../img/intro/bg-three.jpg");
+  width: 100%;
 }
 
 .intro-container {
@@ -951,6 +940,7 @@ a {
   opacity: 0;
 }
 
+
 .swiper-gallery__btn {
   position: absolute;
   top: 25px;
@@ -976,6 +966,7 @@ a {
   width: 30px;
   height: 30px;
   transition: all 0.3s ease-in-out;
+  outline: none;
 }
 
 .swiper-button-prev {
@@ -1488,6 +1479,7 @@ a {
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
+  outline: none;
 }
 
 .projects-prev {
@@ -2419,18 +2411,6 @@ a {
     margin-bottom: 130px;
   }
 
-  .intro-bg--one {
-    background-image: url("../img/intro/bg-one\(1024\).jpg");
-  }
-
-  .intro-bg--two {
-    background-image: url("../img/intro/bg-two\(1024\).jpg");
-  }
-
-  .intro-bg--three {
-    background-image: url("../img/intro/bg-three\(1024\).jpg");
-  }
-
   /*about us
   ==========================*/
   .section-descr {
@@ -2479,8 +2459,6 @@ a {
   }
 
   .slide-card__img {
-    height: 100%;
-    max-height: 315px;
     width: 100%;
   }
 
@@ -2716,18 +2694,6 @@ a {
   }
   .intro__descr {
     width: 100%;
-  }
-
-  .intro-bg--one {
-    background-image: url("../img/intro/bg-one\(768\).jpg");
-  }
-
-  .intro-bg--two {
-    background-image: url("../img/intro/bg-two\(768\).jpg");
-  }
-
-  .intro-bg--three {
-    background-image: url("../img/intro/bg-three\(768\).jpg");
   }
 
   /*about us
@@ -3561,18 +3527,6 @@ a {
     line-height: 16.34px;
   }
 
-  .intro-bg--one {
-    background-image: url("../img/intro/bg-one\(320\).jpg");
-  }
-
-  .intro-bg--two {
-    background-image: url("../img/intro/bg-two\(320\).jpg");
-  }
-
-  .intro-bg--three {
-    background-image: url("../img/intro/bg-three\(320\).jpg");
-  }
-
   /*gallery
   ==============================*/
   .gallery-picture {
@@ -3591,5 +3545,9 @@ a {
   ======================*/
   .accordion-list {
     column-count: 1;
+  }
+
+  .section-accordion__item.active .accordion-container {
+    height: 812px;
   }
 }

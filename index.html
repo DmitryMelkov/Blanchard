@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blanchard-художественная галерея</title>
     <link href="./img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- fonts -->
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" />
+    <link rel="preload" href="fonts/OpenSans-Italic.woff2" as="font" />
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" />
+    <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" />
+
+    <!-- normalize -->
     <link rel="stylesheet" href="./css/normalize.css" />
 
     <!-- Simplebar -->
@@ -159,7 +167,7 @@
             </li>
           </ul>
           <form class="header__additional-form" action="/">
-            <button class="header__additional-form-btn"></button>
+            <button class="header__additional-form-btn" aria-label="Кнопка поиска по сайту"></button>
             <input class="header__additional-form-input" type="search" placeholder="Поиск по сайту" />
           </form>
         </div>
@@ -170,9 +178,33 @@
       <section class="section-intro">
         <div class="swiper swiper-intro">
           <div class="swiper-wrapper intro-anim swiper-no-swiping">
-            <div class="swiper-slide intro-bg intro-bg--one"></div>
-            <div class="swiper-slide intro-bg intro-bg--two"></div>
-            <div class="swiper-slide intro-bg intro-bg--three"></div>
+            <div class="swiper-slide intro-bg intro-bg--one">
+              <picture class="intro-picture">
+                <source media="(min-width: 1025px)" srcset="./img/intro/bg-one.jpg" />
+                <source media="(min-width: 769px)" srcset="./img/intro/bg-one(1024).jpg" />
+                <source media="(min-width: 577px)" srcset="./img/intro/bg-one(768).jpg" />
+                <source media="(max-width: 576px)" srcset="./img/intro/bg-one(320).jpg" />
+                <img alt="Gallery-photo" class="intro-img" src="./img/intro/bg-one.jpg" />
+              </picture>
+            </div>
+            <div class="swiper-slide intro-bg intro-bg--two">
+              <picture class="intro-picture">
+                <source media="(min-width: 1025px)" srcset="./img/intro/bg-two.jpg" />
+                <source media="(min-width: 769px)" srcset="./img/intro/bg-two(1024).jpg" />
+                <source media="(min-width: 577px)" srcset="./img/intro/bg-two(768).jpg" />
+                <source media="(max-width: 576px)" srcset="./img/intro/bg-two(320).jpg" />
+                <img alt="Gallery-photo" class="intro-img" src="./img/intro/bg-two.jpg" />
+              </picture>
+            </div>
+            <div class="swiper-slide intro-bg intro-bg--three">
+              <picture class="intro-picture">
+                <source media="(min-width: 1025px)" srcset="./img/intro/bg-two.jpg" />
+                <source media="(min-width: 769px)" srcset="./img/intro/bg-two(1024).jpg" />
+                <source media="(min-width: 577px)" srcset="./img/intro/bg-two(768).jpg" />
+                <source media="(max-width: 576px)" srcset="./img/intro/bg-two(320).jpg" />
+                <img alt="Gallery-photo" class="intro-img" src="./img/intro/bg-three.jpg" />
+              </picture>
+            </div>
           </div>
         </div>
 
@@ -248,32 +280,68 @@
             <div class="swiper-wrapper gallery-wrapper">
               <div class="swiper-slide slide-card">
                 <a href="#" class="slide-card__link">
-                  <img class="slide-card__img" src="img/gallery/1.jpg" alt="" />
+                  <picture class="slide-card__img">
+                    <source media="(min-width: 1025px)" srcset="./img/gallery/1.jpg" />
+                    <source media="(min-width: 769px)" srcset="./img/gallery/1024/1.jpg" />
+                    <source media="(min-width: 577px)" srcset="./img/gallery/768/1.jpg" />
+                    <source media="(max-width: 576px)" srcset="./img/gallery/320/1.jpg" />
+                    <img alt="Gallery-photo" class="gallery-image" src="./img/gallery/1.jpg" />
+                  </picture>
                 </a>
               </div>
               <div class="swiper-slide slide-card">
                 <a href="#" class="slide-card__link">
-                  <img class="slide-card__img" src="img/gallery/2.jpg" alt="" />
+                  <picture class="slide-card__img">
+                    <source media="(min-width: 1025px)" srcset="./img/gallery/2.jpg" />
+                    <source media="(min-width: 769px)" srcset="./img/gallery/1024/2.jpg" />
+                    <source media="(min-width: 577px)" srcset="./img/gallery/768/2.jpg" />
+                    <source media="(max-width: 576px)" srcset="./img/gallery/320/2.jpg" />
+                    <img alt="Gallery-photo" class="gallery-image" src="./img/gallery/2.jpg" />
+                  </picture>
                 </a>
               </div>
               <div class="swiper-slide slide-card">
                 <a href="#" class="slide-card__link">
-                  <img class="slide-card__img" src="img/gallery/3.jpg" alt="" />
+                  <picture class="slide-card__img">
+                    <source media="(min-width: 1025px)" srcset="./img/gallery/3.jpg" />
+                    <source media="(min-width: 769px)" srcset="./img/gallery/1024/3.jpg" />
+                    <source media="(min-width: 577px)" srcset="./img/gallery/768/3.jpg" />
+                    <source media="(max-width: 576px)" srcset="./img/gallery/320/3.jpg" />
+                    <img alt="Gallery-photo" class="gallery-image" src="./img/gallery/3.jpg" />
+                  </picture>
                 </a>
               </div>
               <div class="swiper-slide slide-card">
                 <a href="#" class="slide-card__link">
-                  <img class="slide-card__img" src="img/gallery/4.jpg" alt="" />
+                  <picture class="slide-card__img">
+                    <source media="(min-width: 1025px)" srcset="./img/gallery/4.jpg" />
+                    <source media="(min-width: 769px)" srcset="./img/gallery/1024/4.jpg" />
+                    <source media="(min-width: 577px)" srcset="./img/gallery/768/4.jpg" />
+                    <source media="(max-width: 576px)" srcset="./img/gallery/320/4.jpg" />
+                    <img alt="Gallery-photo" class="gallery-image" src="./img/gallery/4.jpg" />
+                  </picture>
                 </a>
               </div>
               <div class="swiper-slide slide-card">
                 <a href="#" class="slide-card__link">
-                  <img class="slide-card__img" src="img/gallery/5.jpg" alt="" />
+                  <picture class="slide-card__img">
+                    <source media="(min-width: 1025px)" srcset="./img/gallery/5.jpg" />
+                    <source media="(min-width: 769px)" srcset="./img/gallery/1024/5.jpg" />
+                    <source media="(min-width: 577px)" srcset="./img/gallery/768/5.jpg" />
+                    <source media="(max-width: 576px)" srcset="./img/gallery/320/5.jpg" />
+                    <img alt="Gallery-photo" class="gallery-image" src="./img/gallery/5.jpg" />
+                  </picture>
                 </a>
               </div>
               <div class="swiper-slide slide-card">
                 <a href="#" class="slide-card__link">
-                  <img class="slide-card__img" src="img/gallery/6.jpg" alt="" />
+                  <picture class="slide-card__img">
+                    <source media="(min-width: 1025px)" srcset="./img/gallery/6.jpg" />
+                    <source media="(min-width: 769px)" srcset="./img/gallery/1024/6.jpg" />
+                    <source media="(min-width: 577px)" srcset="./img/gallery/768/6.jpg" />
+                    <source media="(max-width: 576px)" srcset="./img/gallery/320/6.jpg" />
+                    <img alt="Gallery-photo" class="gallery-image" src="./img/gallery/6.jpg" />
+                  </picture>
                 </a>
               </div>
             </div>
@@ -312,12 +380,14 @@
                 <a class="section-catalog__left__link container-btn-hidden" href="">В галерею</a>
               </div>
               <div class="section-catalog__card" data-target="card-0">
-                <img
-                  alt="Бенеддето ди Биндо"
-                  class="section-catalog__card-img"
-                  src="./img/catalog/catalog-img--1.jpg"
-                />
-
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--1.jpg" />
+                  <img
+                    alt="Бенеддето ди Биндо"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--1.jpg"
+                  />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Бенедетто ди Биндо</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1380 — 19 сентября 1417.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -331,11 +401,14 @@
                 </p>
               </div>
               <div class="section-catalog__card" data-target="card-1">
-                <img
-                  alt="Бергоньоне, Амброджо"
-                  class="section-catalog__card-img"
-                  src="./img/catalog/catalog-img--2.jpg"
-                />
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--2.jpg" />
+                  <img
+                    alt="Бергоньоне, Амброджо"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--2.jpg"
+                  />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Бергоньоне, Амброджо</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1453 — 4 апреля 1523.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -348,11 +421,14 @@
                 </p>
               </div>
               <div class="section-catalog__card" data-target="card-2">
-                <img
-                  alt="Биссоло, Франческо"
-                  class="section-catalog__card-img"
-                  src="./img/catalog/catalog-img--3.jpg"
-                />
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--3.jpg" />
+                  <img
+                    alt="Биссоло, Франческо"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--3.jpg"
+                  />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Биссоло, Франческо</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1470 — 20 апреля 1554.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -366,12 +442,14 @@
                 </p>
               </div>
               <div class="section-catalog__card" data-target="card-3">
-                <img
-                  alt="Больтраффио, Джованни"
-                  class="section-catalog__card-img"
-                  src="./img/catalog/catalog-img--4.jpg"
-                />
-
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--4.jpg" />
+                  <img
+                    alt="Больтраффио, Джованни"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--4.jpg"
+                  />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Больтраффио, Джованни</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1467 — 11 января 1516.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -386,12 +464,14 @@
                 </p>
               </div>
               <div class="section-catalog__card" data-target="card-4">
-                <img
-                  alt="Бонсиньори, Франческо"
-                  class="section-catalog__card-img"
-                  src="./img/catalog/catalog-img--5.jpg"
-                />
-
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--5.jpg" />
+                  <img
+                    alt="Бонсиньори, Франческо"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--5.jpg"
+                  />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Бонсиньори, Франческо</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1460 — 2 июля 1519.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -403,12 +483,14 @@
               </div>
 
               <div class="section-catalog__card" data-target="card-5">
-                <img
-                  alt="Боттичини, Рафаэлло"
-                  class="section-catalog__card-img"
-                  src="./img/catalog/catalog-img--6.jpg"
-                />
-
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--6.jpg" />
+                  <img
+                    alt="Боттичини, Рафаэлло"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--6.jpg"
+                  />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Боттичини, Рафаэлло</h3>
                 <p class="catalog-left-date descr-reset">11 сентября 1477 — 11 января 1520.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -427,7 +509,10 @@
                 </p>
               </div>
               <div class="section-catalog__card" data-target="card-6">
-                <img alt="Брамантино" class="section-catalog__card-img" src="./img/catalog/catalog-img--7.jpg" />
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--7.jpg" />
+                  <img alt="Брамантино" class="section-catalog__card-img" src="./img/catalog/catalog-img--7.jpg" />
+                </picture>
 
                 <h3 class="catalog-left-title title-reset">Брамантино</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1465 — 11 января 1530.</p>
@@ -440,8 +525,10 @@
                 </p>
               </div>
               <div class="section-catalog__card" data-target="card-7">
-                <img alt="Бреа, Людовико" class="section-catalog__card-img" src="./img/catalog/catalog-img--8.jpg" />
-
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--8.jpg" />
+                  <img alt="Бреа, Людовико" class="section-catalog__card-img" src="./img/catalog/catalog-img--8.jpg" />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Бреа, Людовико</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1450 — 11 января 1523.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -454,11 +541,14 @@
                 </p>
               </div>
               <div class="section-catalog__card" data-target="card-8">
-                <img
-                  alt="Бьяджо д&rsquo;Антонио Туччи"
-                  class="section-catalog__card-img"
-                  src="./img/catalog/catalog-img--9.jpg"
-                />
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--9.jpg" />
+                  <img
+                    alt="Бьяджо д&rsquo;Антонио Туччи"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--9.jpg"
+                  />
+                </picture>
 
                 <h3 class="catalog-left-title title-reset">Бьяджо д&rsquo;Антонио Туччи</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1445 — 1 июня 1510.</p>
@@ -472,8 +562,10 @@
               </div>
 
               <div class="section-catalog__card" data-target="card-9">
-                <img alt="Веккьетта" class="section-catalog__card-img" src="./img/catalog/catalog-img--10.jpg" />
-
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--10.jpg" />
+                  <img alt="Веккьетта" class="section-catalog__card-img" src="./img/catalog/catalog-img--10.jpg" />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Веккьетта</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1412 — 6 июня 1480.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -486,8 +578,14 @@
                 </p>
               </div>
               <div class="section-catalog__card" data-target="card-10">
-                <img alt="Андреа Верроккьо" class="section-catalog__card-img" src="./img/catalog/catalog-img--11.jpg" />
-
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--11.jpg" />
+                  <img
+                    alt="Андреа Верроккьо"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--11.jpg"
+                  />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Андреа Верроккьо</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1435 — 10 октября 1488.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -500,12 +598,14 @@
                 </p>
               </div>
               <div class="section-catalog__card card-is-active" data-target="card-11">
-                <img
-                  alt="Доменико Гирландайо"
-                  class="section-catalog__card-img"
-                  src="./img/catalog/catalog-img--12.jpg"
-                />
-
+                <picture>
+                  <source srcset="./img/catalog/catalog-img--12.jpg" />
+                  <img
+                    alt="Доменико Гирландайо"
+                    class="section-catalog__card-img"
+                    src="./img/catalog/catalog-img--12.jpg"
+                  />
+                </picture>
                 <h3 class="catalog-left-title title-reset">Доменико Гирландайо</h3>
                 <p class="catalog-left-date descr-reset">2 июня 1448 — 11 января 1494.</p>
                 <p class="catalog-left-descr descr-reset">
@@ -528,78 +628,140 @@
                   <div class="accordion-container">
                     <ul class="accordion-list list-reset">
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-0">Бенедетто ди Биндо</button>
+                        <button class="accordion-btn btn-reset" data-path="card-0" aria-label="Бенедетто ди Биндо">
+                          Бенедетто ди Биндо
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-1">Бергоньоне, Амброджо</button>
+                        <button class="accordion-btn btn-reset" data-path="card-1" aria-label="Бергоньоне, Амброджо">
+                          Бергоньоне, Амброджо
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-2">Биссоло, Франческо</button>
+                        <button class="accordion-btn btn-reset" data-path="card-2" aria-label="Биссоло, Франческо">
+                          Биссоло, Франческо
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-3">Больтраффио, Джованни</button>
+                        <button class="accordion-btn btn-reset" data-path="card-3" aria-label="Больтраффио, Джованни">
+                          Больтраффио, Джованни
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-4">Бонсиньори, Франческо</button>
+                        <button class="accordion-btn btn-reset" data-path="card-4" aria-label="Бонсиньори, Франческо">
+                          Бонсиньори, Франческо
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-5">Боттичини, Рафаэлло</button>
+                        <button class="accordion-btn btn-reset" data-path="card-5" aria-label="Бенедетто ди Биндо">
+                          Боттичини, Рафаэлло
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-6">Брамантино</button>
+                        <button class="accordion-btn btn-reset" data-path="card-6" aria-label="Брамантино">
+                          Брамантино
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-7">Бреа, Людовико</button>
+                        <button class="accordion-btn btn-reset" data-path="card-7" aria-label="Бреа, Людовико">
+                          Бреа, Людовико
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-8">Бьяджо д’Антонио Туччи</button>
+                        <button class="accordion-btn btn-reset" data-path="card-8" aria-label="Бьяджо д’Антонио Туччи">
+                          Бьяджо д’Антонио Туччи
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-9">Веккьетта</button>
+                        <button class="accordion-btn btn-reset" data-path="card-9" aria-label="Веккьетта">
+                          Веккьетта
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="card-10">Андреа Верроккьо</button>
+                        <button class="accordion-btn btn-reset" data-path="card-10" aria-label="Андреа Верроккьо">
+                          Андреа Верроккьо
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset btn-active" data-path="card-11">
+                        <button
+                          class="accordion-btn btn-reset btn-active"
+                          data-path="card-11"
+                          aria-label="Доменико Гирландайо"
+                        >
                           Доменико Гирландайо
                         </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Беноццо Гоццоли</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Беноццо Гоццоли">
+                          Беноццо Гоццоли
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Граначчи, Франческо</button>
+                        <button
+                          class="accordion-btn btn-reset"
+                          data-path="catalog-mask"
+                          aria-label="Граначчи, Франческо"
+                        >
+                          Граначчи, Франческо
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Грегорио ди Чекко</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Грегорио ди Чекко">
+                          Грегорио ди Чекко
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Джованни да Удине</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Джованни да Удине">
+                          Джованни да Удине
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Джованни ди Паоло</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Джованни ди Паоло">
+                          Джованни ди Паоло
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Джорджоне</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Джорджоне">
+                          Джорджоне
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Парентино, Бернардо</button>
+                        <button
+                          class="accordion-btn btn-reset"
+                          data-path="catalog-mask"
+                          aria-label="Парентино, Бернардо"
+                        >
+                          Парентино, Бернардо
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Пезеллино</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Пезеллино">
+                          Пезеллино
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Пьетро Перуджино</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Пьетро Перуджино">
+                          Пьетро Перуджино
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Перуцци, Бальдассаре</button>
+                        <button
+                          class="accordion-btn btn-reset"
+                          data-path="catalog-mask"
+                          aria-label="Перуцци, Бальдассаре"
+                        >
+                          Перуцци, Бальдассаре
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Пизанелло</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Пизанелло">
+                          Пизанелло
+                        </button>
                       </li>
                       <li class="accordion-item">
-                        <button class="accordion-btn btn-reset" data-path="catalog-mask">Пинтуриккьо</button>
+                        <button class="accordion-btn btn-reset" data-path="catalog-mask" aria-label="Пинтуриккьо">
+                          Пинтуриккьо
+                        </button>
                       </li>
                     </ul>
                   </div>
@@ -718,7 +880,13 @@
               <li class="section-events__item swiper-slide">
                 <article class="events-article">
                   <figure class="events-figure">
-                    <img alt="Events-image" class="events-image" src="./img/events/events-img--1.jpg" />
+                    <picture class="events-picture">
+                      <source media="(min-width: 1025px)" srcset="./img/events/events-img--1.jpg" />
+                      <source media="(min-width: 769px)" srcset="./img/events/1024/events-img--1.jpg" />
+                      <source media="(min-width: 577px)" srcset="./img/events/768/events-img--1.jpg" />
+                      <source media="(max-width: 576px)" srcset="./img/events/320/events-img--1.jpg" />
+                      <img alt="Events-image" class="events-image" src="./img/events/events-img--1.jpg" />
+                    </picture>
                     <figcaption class="events-caption">
                       Музей им. Щусева
                       <p class="events-caption-date">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</p>
@@ -740,7 +908,13 @@
               <li class="section-events__item swiper-slide">
                 <article class="events-article">
                   <figure class="events-figure">
-                    <img alt="Events-image" class="events-image" src="./img/events/events-img--2.jpg" />
+                    <picture class="events-picture">
+                      <source media="(min-width: 1025px)" srcset="./img/events/events-img--2.jpg" />
+                      <source media="(min-width: 769px)" srcset="./img/events/1024/events-img--2.jpg" />
+                      <source media="(min-width: 577px)" srcset="./img/events/768/events-img--2.jpg" />
+                      <source media="(max-width: 576px)" srcset="./img/events/320/events-img--2.jpg" />
+                      <img alt="Events-image" class="events-image" src="./img/events/events-img--2.jpg" />
+                    </picture>
                     <figcaption class="events-caption">
                       ММОМА
                       <p class="events-caption-date">24&nbsp;марта 19:00</p>
@@ -763,7 +937,13 @@
               <li class="section-events__item swiper-slide">
                 <article class="events-article">
                   <figure class="events-figure">
-                    <img alt="Events-image" class="events-image" src="./img/events/events-img--3.jpg" />
+                    <picture class="events-picture">
+                      <source media="(min-width: 1025px)" srcset="./img/events/events-img--3.jpg" />
+                      <source media="(min-width: 769px)" srcset="./img/events/1024/events-img--3.jpg" />
+                      <source media="(min-width: 577px)" srcset="./img/events/768/events-img--3.jpg" />
+                      <source media="(max-width: 576px)" srcset="./img/events/320/events-img--3.jpg" />
+                      <img alt="Events-image" class="events-image" src="./img/events/events-img--3.jpg" />
+                    </picture>
                     <figcaption class="events-caption">
                       Еврейский музей
                       <p class="events-caption-date">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</p>
@@ -784,7 +964,13 @@
               <li class="section-events__item swiper-slide">
                 <article class="events-article">
                   <figure class="events-figure">
-                    <img alt="Events-image" class="events-image" src="./img/events/events-img--4.jpg" />
+                    <picture class="events-picture">
+                      <source media="(min-width: 1025px)" srcset="./img/events/events-img--4.jpg" />
+                      <source media="(min-width: 769px)" srcset="./img/events/1024/events-img--4.jpg" />
+                      <source media="(min-width: 577px)" srcset="./img/events/768/events-img--4.jpg" />
+                      <source media="(max-width: 576px)" srcset="./img/events/320/events-img--4.jpg" />
+                      <img alt="Events-image" class="events-image" src="./img/events/events-img--4.jpg" />
+                    </picture>
                     <figcaption class="events-caption">
                       Третьяковка на&nbsp;Крымском валу
                       <p class="events-caption-date">с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля</p>
@@ -806,7 +992,13 @@
               <li class="section-events__item swiper-slide">
                 <article class="events-article">
                   <figure class="events-figure">
-                    <img alt="Events-image" class="events-image" src="./img/events/events-img--5.jpg" />
+                    <picture class="events-picture">
+                      <source media="(min-width: 1025px)" srcset="./img/events/events-img--5.jpg" />
+                      <source media="(min-width: 769px)" srcset="./img/events/1024/events-img--5.jpg" />
+                      <source media="(min-width: 577px)" srcset="./img/events/768/events-img--5.jpg" />
+                      <source media="(max-width: 576px)" srcset="./img/events/320/events-img--5.jpg" />
+                      <img alt="Events-image" class="events-image" src="./img/events/events-img--5.jpg" />
+                    </picture>
                     <figcaption class="events-caption">
                       ММАМ
                       <p class="events-caption-date">с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая</p>
@@ -850,6 +1042,7 @@
                   class="section-projects__tooltip btn-reset"
                   data-tippy-content="Пример современных тенденций&nbsp;&mdash; современная методология разработки"
                   id="tooltipPopup-0"
+                  aria-label="Выноска"
                 >
                   <span class="section-projects__tooltip-marker">
                     <span class="marker-icon"></span>
@@ -863,6 +1056,7 @@
                   class="section-projects__tooltip btn-reset"
                   data-tippy-content="Приятно, граждане, наблюдать, как сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции"
                   id="tooltipPopup-1"
+                  aria-label="Выноска"
                 >
                   <span class="section-projects__tooltip-marker">
                     <span class="marker-icon"></span>
@@ -874,6 +1068,7 @@
                   class="section-projects__tooltip btn-reset"
                   data-tippy-content="В стремлении повысить качество"
                   id="tooltipPopup-2"
+                  aria-label="Выноска"
                 >
                   <span class="section-projects__tooltip-marker">
                     <span class="marker-icon"></span>

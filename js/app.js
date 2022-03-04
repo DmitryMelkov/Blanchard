@@ -224,22 +224,22 @@ window.addEventListener("DOMContentLoaded", function () {
         slidesPerGroup: 1,
       },
       500: {
-        spaceBetween: 20,
+        spaceBetween: 40,
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
-      768: {
-        spaceBetween: 34,
+      600: {
+        spaceBetween: 50,
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
       769: {
-        spaceBetween: 49,
+        spaceBetween: 65,
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
       1025: {
-        spaceBetween: 50,
+        spaceBetween: 60,
         slidesPerView: 3,
         slidesPerGroup: 3,
       },
