@@ -3541,6 +3541,11 @@ a {
     width: 100%;
   }
 
+  .slide-card__img {
+    height: 373px;
+    max-height: 373px;
+  }
+
   /*catalog
   ======================*/
   .accordion-list {
