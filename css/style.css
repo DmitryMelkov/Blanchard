@@ -729,7 +729,7 @@ a {
 ==================================*/
 .section-gallery {
   padding-top: 80px;
-  padding-bottom: 82px;
+  padding-bottom: 74px;
   background-image: url("../img/gallery/gallery-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -944,7 +944,6 @@ a {
   opacity: 0;
 }
 
-
 .swiper-gallery__btn {
   position: absolute;
   top: 25px;
@@ -1098,7 +1097,6 @@ a {
 
 .section-accordion__item.active .title-link {
   color: var(--color-purple-active);
-
 }
 
 .section-accordion__item.active .accordion-circle {
@@ -1197,7 +1195,7 @@ a {
 =======================*/
 .section-events {
   padding-top: 5px;
-  padding-bottom: 40px;
+  padding-bottom: 52px;
 }
 
 .events-container {
@@ -1258,7 +1256,7 @@ a {
 }
 
 .events-figure {
-  margin: 0 0 7px;
+  margin: 0 0 13px;
 }
 
 .events-image {
@@ -1290,7 +1288,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 45px 45px 50px;
+  padding: 0 45px 36px 50px;
   height: 100%;
   flex-basis: 100%;
 }
@@ -1298,7 +1296,7 @@ a {
 .body-info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 78px;
+  margin-bottom: 74px;
 }
 
 .body-info__title {
@@ -1347,7 +1345,7 @@ a {
 ================================*/
 .section-projects {
   padding-top: 30px;
-  padding-bottom: 66px;
+  padding-bottom: 0;
 }
 
 .projects-title {
@@ -1360,7 +1358,7 @@ a {
 }
 
 .content-top {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
 
 .project-content {
@@ -1503,7 +1501,8 @@ a {
 .section-contacts {
   flex-direction: column;
   border-top: 1px solid var(--color-grey-border);
-  padding-top: 14px;
+  margin-top: 83px;
+  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -1516,7 +1515,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .contacts-title {
@@ -2170,8 +2169,6 @@ a {
   outline: none;
 }
 
-
-
 .accordion-title:focus-visible .title-link {
   color: var(--color-white);
   background-color: var(--color-purple-active);
@@ -2430,6 +2427,9 @@ a {
 
   /*about us
   ==========================*/
+  .section-about-us {
+    padding-top: 75px;
+  }
   .section-descr {
     width: 98%;
   }
@@ -2437,7 +2437,7 @@ a {
   /*gallery
   =========================*/
   .section-gallery {
-    padding-bottom: 112px;
+    padding-bottom: 84px;
   }
 
   .section-gallery__left {
@@ -2506,7 +2506,7 @@ a {
   /* Section-Events */
   .section-events {
     padding-top: 28px;
-    padding-bottom: 62px;
+    padding-bottom: 50px;
   }
 
   .events-title {
@@ -2527,18 +2527,18 @@ a {
 
   .events-caption {
     align-items: flex-end;
-    padding: 30px 34px 0 34px;
+    padding: 15px 34px 0 34px;
     line-height: 16px;
   }
 
   .section-events__body {
     flex-basis: 100%;
-    padding: 4px 20px 50px 33px;
+    padding: 0 20px 50px 33px;
     height: 100%;
   }
 
   .body-info {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
   }
 
   .body-info__title {
@@ -2569,8 +2569,8 @@ a {
   }
   /*project*/
   .section-projects {
-    padding-top: 4px;
-    padding-bottom: 35px;
+    padding-top: 23px;
+    padding-bottom: 0;
   }
 
   .content-top {
@@ -2618,16 +2618,18 @@ a {
 
   /* contacts */
   .section-contacts {
-    padding-top: 12px;
+    padding-top: 0;
+    margin-top: 77px;
   }
 
   .contacts-container {
+    padding-top: 0;
     padding-bottom: 0;
   }
 
   .contacts-content {
     padding-top: 44px;
-    padding-bottom: 39px;
+    padding-bottom: 43px;
   }
 
   .form {
@@ -2803,6 +2805,10 @@ a {
     padding-bottom: 62px;
   }
 
+  .section-accordion__item.active .accordion-container {
+    height: 341px;
+  }
+
   .section-catalog__bottom {
     flex-direction: column-reverse;
   }
@@ -2846,7 +2852,7 @@ a {
   /* Section-Events */
   .section-events {
     padding-top: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 36px;
   }
 
   .section-events__item {
@@ -2871,17 +2877,17 @@ a {
   }
 
   .events-caption {
-    padding: 19px 34px 0 34px;
+    padding: 10px 34px 0 34px;
   }
 
   /*project*/
   .section-projects {
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .content-top {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .content-bottom__title {
@@ -2894,7 +2900,7 @@ a {
 
   .content-top__descr {
     width: 98%;
-    line-height: 31px;
+    line-height: 31.5px;
   }
 
   .section-projects__link {
@@ -2924,10 +2930,6 @@ a {
   }
 
   /* contacts */
-  .section-contacts {
-    padding-top: 17px;
-  }
-
   .contacts-content {
     padding-bottom: 43px;
   }
@@ -3200,7 +3202,7 @@ a {
   }
 
   .events-caption {
-    padding-top: 42px;
+    padding-top: 15px;
     padding-right: 17px;
   }
 
@@ -3256,7 +3258,7 @@ a {
   }
 
   .content-top {
-    margin-bottom: 16px;
+    margin-bottom: 11px;
   }
 
   .content-bottom__title {
@@ -3269,6 +3271,7 @@ a {
   }
 
   /*contacts*/
+
   .contacts-container {
     padding-top: 17px;
   }
@@ -3338,9 +3341,12 @@ a {
     max-width: 100%;
   }
   /*contacts*/
+
   .section-contacts {
-    padding-top: 20px;
+    padding-top: 15px;
+    margin-top: 0;
     padding-bottom: 0;
+    border-top: none;
   }
 
   .contacts-content {
@@ -3355,7 +3361,6 @@ a {
   }
 
   .content-left__title {
-    margin-bottom: 5px;
     font-size: 18px;
   }
 
