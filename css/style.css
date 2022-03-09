@@ -343,6 +343,7 @@ a {
 }
 
 .header__form-btn-close {
+  display: none;
   background-color: transparent;
   border: 0;
   width: 0;
@@ -2376,7 +2377,7 @@ a {
   }
 
   .header__form-btn.active .header__form-btn-close {
-    opacity: 1;
+    display: block;
     width: 25px;
     height: 25px;
   }
