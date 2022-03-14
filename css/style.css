@@ -968,7 +968,7 @@ a {
   border-radius: 50%;
   background-color: var(--color-dove-gray);
   opacity: 1;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* .swiper-gallery__btn-prev-svg {
@@ -977,7 +977,6 @@ a {
   width: 100%;
   height: 100%;
 } */
-
 
 .swiper-button-prev {
   left: 5px;
@@ -989,7 +988,7 @@ a {
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  content: '';
+  content: "";
 }
 
 .swiper-pagination-gallery {
@@ -1200,8 +1199,6 @@ a {
   color: var(--color-purple);
 }
 
-
-
 /*events
 =======================*/
 .section-events {
@@ -1249,7 +1246,8 @@ a {
   right: auto;
 }
 
-.swiper-events__btn-next::after, .swiper-events__btn-prev::after {
+.swiper-events__btn-next::after,
+.swiper-events__btn-prev::after {
   height: 10px;
   width: 10px;
   border-bottom: 1px solid var(--color-black);
@@ -1643,18 +1641,18 @@ a {
 }
 
 .link-whatsapp {
-  color: #30BF39;
+  color: #30bf39;
 }
 
 .link-telegram {
-  color: #30BF39;
-  color: #2AABEE;
+  color: #30bf39;
+  color: #2aabee;
 }
 
 .content-right__link svg {
   border: 2px solid transparent;
   border-radius: 50%;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 /* Map */
@@ -1754,7 +1752,7 @@ a {
     color: var(--color-purple);
   }
 
-  .header__additional-btn:hover::after:not(:focus-visible) {
+  .header__additional-btn:hover:not(:focus-visible)::after {
     border-top: 1px solid var(--color-purple);
     border-right: 1px solid var(--color-purple);
   }
@@ -1802,7 +1800,8 @@ a {
 
   /*gallery-swiper*/
 
-  .swiper-button-next:hover, .swiper-button-prev:hover {
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
     background-color: var(--color-purple);
   }
 
@@ -1858,8 +1857,6 @@ a {
     background-color: var(--color-biloba-flower);
   }
 
-
-
   /*project*/
   .section-projects__tooltip:hover .section-projects__tooltip-marker {
     color: var(--color-biloba-flower);
@@ -1873,7 +1870,8 @@ a {
     filter: grayscale(0);
   }
 
-  .projects-prev:hover, .projects-next:hover {
+  .projects-prev:hover,
+  .projects-next:hover {
     background-color: var(--color-biloba-flower);
   }
 
@@ -1932,7 +1930,7 @@ a {
   color: var(--color-purple-active);
 }
 
-.header__additional-btn:active::after:not(:focus-visible) {
+.header__additional-btn:active:not(:focus-visible)::after {
   border-top: 1px solid var(--color-purple-active);
   border-right: 1px solid var(--color-purple-active);
 }
@@ -1968,12 +1966,11 @@ a {
   opacity: 1;
 }
 
-.swiper-button-next:active, .swiper-button-prev:active {
+.swiper-button-next:active,
+.swiper-button-prev:active {
   border-color: var(--color-black);
   background-color: var(--color-purple-active);
 }
-
-
 
 /*catalog*/
 .accordion-title:active .title-link {
@@ -2009,7 +2006,6 @@ a {
   background-color: var(--color-gallery);
 }
 
-
 /*project*/
 .section-projects__tooltip:active .section-projects__tooltip-marker .marker-circle {
   color: var(--color-purple);
@@ -2031,7 +2027,8 @@ a {
   background-image: url("../img/project/tooltip-active.svg");
 }
 
-.projects-prev:active, .projects-next:active {
+.projects-prev:active,
+.projects-next:active {
   border-color: var(--color-purple);
   background-color: var(--color-biloba-flower);
 }
@@ -2094,8 +2091,14 @@ a {
 
 .header__additional-btn:focus-visible {
   background-color: var(--color-purple-active);
+  color: var(--color-white);
   outline-offset: -1px;
   outline: 7px solid var(--color-purple-active);
+}
+
+.header__additional-btn:focus-visible::after {
+  border-top: 1px solid var(--color-white);
+  border-right: 1px solid var(--color-white);
 }
 
 .dropdown-link:focus-visible {
@@ -2132,7 +2135,8 @@ a {
   border: 3px solid var(--color-purple-active);
 }
 
-.swiper-button-next:focus-visible, .swiper-button-prev:focus-visible {
+.swiper-button-next:focus-visible,
+.swiper-button-prev:focus-visible {
   border-color: var(--color-black);
 }
 
@@ -2148,8 +2152,6 @@ a {
 .gallery-bottom__checkbox:not(:disabled):not(:checked):focus-visible + .gallery-bottom__name::before {
   border-color: var(--color-light-lilac);
 }
-
-
 
 /*catalog*/
 .section-accordion__item .accordion-title:focus-visible {
@@ -2174,7 +2176,8 @@ a {
 }
 
 /*events*/
-.swiper-events__btn-next:focus-visible, .swiper-events__btn-prev:focus-visible {
+.swiper-events__btn-next:focus-visible,
+.swiper-events__btn-prev:focus-visible {
   border-color: var(--color-purple);
   background-color: var(--color-gallery);
 }
@@ -2202,7 +2205,8 @@ a {
   outline: none;
 }
 
-.projects-prev:focus-visible, .projects-next:focus-visible {
+.projects-prev:focus-visible,
+.projects-next:focus-visible {
   border-color: var(--color-amethyst);
 }
 
