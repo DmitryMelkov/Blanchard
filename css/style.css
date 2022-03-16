@@ -266,6 +266,8 @@ a {
 }
 .header__nav-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__nav-item {
@@ -2190,6 +2192,8 @@ a {
 }
 
 /*project*/
+
+
 .project-slide:focus-visible {
   border: 1px solid var(--color-purple);
   outline: none;
@@ -2200,7 +2204,7 @@ a {
   outline: none;
 }
 
-.marker-icon:focus-visible {
+.section-projects__tooltip:focus-visible .section-projects__tooltip-marker .marker-icon {
   background-image: url("../img/project/tooltip-hover.svg");
   outline: none;
 }
